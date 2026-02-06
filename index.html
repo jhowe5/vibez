@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charlie's Adventures Around the World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>charlie's adventures</h1>
+    <p>around the world</p>
+  </div>
+
+  <!-- Globe -->
+  <div id="globe-container"></div>
+
+  <!-- Popup -->
+  <div class="popup-overlay">
+    <div class="popup-card" id="popup-card">
+      <button class="close-btn" id="popup-close">&times;</button>
+      <div class="place-name" id="popup-name"></div>
+      <div class="place-date" id="popup-date"></div>
+      <div class="place-notes" id="popup-notes"></div>
+    </div>
+  </div>
+
+  <!-- Hint -->
+  <div class="hint">click a pin to explore</div>
+
+  <!-- Globe.gl (includes Three.js) -->
+  <script src="//unpkg.com/globe.gl"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
